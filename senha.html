@@ -5,34 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Entrada</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap');
+
         body {
             background-color: black;
             color: #b96d4c;
-            font-family: Arial, sans-serif;
+            font-family: "Tenor Sans", serif;
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            margin: 0;
         }
-        input {
-            padding: 10px;
+        input, button {
+            padding: 12px;
             font-size: 16px;
             margin: 10px;
+            border-radius: 10px; /* Cantos arredondados */
+            width: 80%;
+            max-width: 300px;
+        }
+        input {
             border: 2px solid #b96d4c;
             background-color: black;
             color: #b96d4c;
-            border-radius: 10px; /* Cantos arredondados */
         }
         button {
-            padding: 10px 20px;
-            font-size: 16px;
             background-color: #b96d4c;
             color: black;
             border: none;
             cursor: pointer;
-            border-radius: 10px; /* Cantos arredondados */
+            transition: background-color 0.3s ease-in-out;
         }
         button:hover {
             background-color: #9a5235;
@@ -47,7 +52,7 @@
         function verificarSenha() {
             const senha = document.getElementById('senha').value;
             if (senha === '170825') {
-                window.location.href = 'estrada.html';
+                window.location.href = './estrada.html';  // Caminho ajustado
             } else {
                 alert('Senha incorreta!');
             }
@@ -55,8 +60,8 @@
     </script>
 </head>
 <body>
-    <h1>Digite a senha para ver </h1>
-    <img src="estrada.png" alt="estrada">
+    <h1>Digite a senha para ver</h1>
+    <img src="./estrada.png" alt="estrada"> <!-- Caminho ajustado -->
     <input type="password" id="senha" placeholder="Digite a senha">
     <button onclick="verificarSenha()">Entrar</button>
 </body>
