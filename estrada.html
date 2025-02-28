@@ -21,18 +21,37 @@
             height: 100vh;
             margin: 0;
         }
+
         h1 {
             font-size: 2rem;
         }
+
         video {
             width: 80%;
             max-width: 800px;
             margin-top: 20px;
         }
+
         img {
             padding: 10px;
             margin: 10px; 
             height: 15vh;
+            max-height: 150px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            img {
+                height: 12vh;
+            }
+
+            video {
+                width: 90%;
+                max-width: 100%;
+            }
         }
     </style>
 </head>
