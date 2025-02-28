@@ -50,13 +50,13 @@
         img {
             padding: 10px;
             margin: 10px; 
-            height: 20vh;
-            max-height: 200px;
+            max-height: 25vh; /* Limitar a altura da imagem */
+            width: auto; /* Manter a proporção */
         }
 
         @media (max-width: 600px) {
             img {
-                height: 15vh;
+                max-height: 20vh; /* Menor altura para dispositivos móveis */
             }
 
             h1 {

@@ -35,8 +35,8 @@
         img {
             padding: 10px;
             margin: 10px; 
-            height: 15vh;
-            max-height: 150px;
+            max-height: 20vh; /* Limitar altura da imagem */
+            width: auto; /* Manter proporção */
         }
 
         @media (max-width: 600px) {
@@ -45,7 +45,7 @@
             }
 
             img {
-                height: 12vh;
+                max-height: 15vh; /* Menor altura para dispositivos móveis */
             }
 
             video {
