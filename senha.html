@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Entrada</title>
+    <style>
+        body {
+            background-color: black;
+            color: #b96d4c;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            border: 2px solid #b96d4c;
+            background-color: black;
+            color: #b96d4c;
+            border-radius: 10px; /* Cantos arredondados */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #b96d4c;
+            color: black;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px; /* Cantos arredondados */
+        }
+        button:hover {
+            background-color: #9a5235;
+        }
+        img {
+            padding: 10px;
+            margin: 10px; 
+            height: 20vh;
+        }
+    </style>
+    <script>
+        function verificarSenha() {
+            const senha = document.getElementById('senha').value;
+            if (senha === '170825') {
+                window.location.href = 'estrada.html';
+            } else {
+                alert('Senha incorreta!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Digite a senha para ver </h1>
+    <img src="estrada.png" alt="estrada">
+    <input type="password" id="senha" placeholder="Digite a senha">
+    <button onclick="verificarSenha()">Entrar</button>
+</body>
+</html>
